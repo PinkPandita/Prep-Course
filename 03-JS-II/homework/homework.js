@@ -156,28 +156,27 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-let raiz = Math.floor( Math.sqrt(numero)) +1;
+if (numero > 2) { return false
+  
+}
+  let raiz = Math.floor( Math.sqrt(numero)) +1;
 for(let i = 2; i < raiz; ++i) {
   if (numero % i == 0) { 
     return false;
-    
   }
+  return true
 }
-return true
+
 }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  switch (valor) {
-    case true:
-      return "Soy verdadero"
-      
-  case false:
-    "Soy falso"
-    default:
-      break;
+  if (valor === true) {return "Soy verdadero" 
+    
+  } else { return "Soy falso"
+    
   }
 
 }
